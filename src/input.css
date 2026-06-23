@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cafe-bg: #15110d;
+  --color-cafe-accent: #d8c3a5;
+  --color-cafe-gold: #b58d63;
+  --color-cafe-title: #f1e3cf;
+  --color-cafe-muted: #a3998e;
+  --font-title: "Cormorant Garamond", "Serif";
+}

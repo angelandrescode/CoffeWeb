@@ -1,0 +1,487 @@
+<!doctype html>
+<html class="scroll-smooth" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Prisma - Salamanca</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-cafe-bg font-sans min-h-screen px-6 md:px-16 flex flex-col justify-between items-center"
+  >
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <header
+          class="flex justify-between my-8 items-center w-full max-w-6xl mx-auto mb-16 px-10 md:px-5"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="bg-cafe-accent text-cafe-bg font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm"
+            >
+              P
+            </div>
+            <span
+              class="text-cafe-title font-subtitle font-medium text-base tracking-wide"
+              >Café Prisma</span
+            >
+          </div>
+
+          <nav class="hidden md:flex gap-8 absolute left-1/2 -translate-x-1/2">
+            <a
+              href="#menu"
+              class="font-subtitle text-cafe-muted hover:text-cafe-text transition-colors text-sm font-medium"
+              >Menú</a
+            >
+            <a
+              href="#origen"
+              class="font-subtitle text-cafe-muted hover:text-cafe-text transition-colors text-sm font-medium"
+              >Origen</a
+            >
+          </nav>
+
+          <a
+            href="#"
+            class="font-subtitle bg-cafe-accent text-cafe-bg px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+          >
+            Reservar mesa
+          </a>
+        </header>
+        <main class="min-h-screen min-w-screen">
+          <section
+            style="background: radial-gradient(#201610d9 20%, #15110d 50%)"
+            class="p-10 flex flex-col md:flex-row justify-between items-start md:items-center w-full max-w-6xl mx-auto gap-12 md:gap-16 my-auto"
+          >
+            <section class="flex-1 max-w-xl">
+              <p
+                class="split-lines text-cafe-gold text-xs tracking-[0.15em] font-medium mb-5"
+              >
+                CAFÉ DE ESPECIALIDAD · MADRID
+              </p>
+              <h1
+                class="split-words text-cafe-title font-title text-6xl md:text-7xl font-normal leading-[1.05] mb-6"
+              >
+                Café Prisma
+              </h1>
+              <p
+                class="split-lines text-cafe-muted text-lg font-light leading-relaxed mb-8"
+              >
+                Un refugio de espresso, filtro y sobremesa lenta: cafés
+                fenomenales, madera oscura y una carta que cambia con la
+                temporada.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 bg-cafe-accent text-cafe-bg px-6 py-3.5 rounded-full text-base font-medium hover:opacity-90 transition-opacity"
+              >
+                <span>Reservar mesa</span>
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </a>
+            </section>
+
+            <aside
+              style="
+                background: linear-gradient(160deg, #563721, #231b14, #120e0b);
+              "
+              class="transform hover:-translate-y-1 border border-cafe-accent/40 rounded-[24px] p-8 w-full md:w-[420px] min-h-[300px] flex flex-col justify-between shadow-xl transition-transform"
+            >
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <span
+                    class="split-lines text-cafe-gold text-xs tracking-wider uppercase font-medium"
+                    >Lote de temporada</span
+                  >
+                  <svg
+                    class="w-5 h-5 text-cafe-muted"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <ellipse
+                      cx="12"
+                      cy="12"
+                      rx="7"
+                      ry="10"
+                      transform="rotate(30 12 12)"
+                    ></ellipse>
+                    <path d="M10 5 C 13 9, 11 15, 14 19"></path>
+                  </svg>
+                </div>
+
+                <h2
+                  class="split-words text-cafe-title font-title text-4xl font-normal tracking-wide mb-4"
+                >
+                  España · Canarias
+                </h2>
+
+                <p
+                  class="split-lines text-cafe-muted text-sm md:text-base font-light leading-relaxed"
+                >
+                  Lote cultivado en Agaete, Gran Canaria. Perfil suave con
+                  cacao, fruta madura y un final limpio.
+                </p>
+              </div>
+
+              <div
+                class="text-cafe-muted text-sm font-light tracking-wide mt-6"
+              >
+                18 g · 2:45
+              </div>
+            </aside>
+          </section>
+          <section
+            id="menu"
+            class="text-[#e6dfd5] font-sans px-6 md:px-16 py-16 w-full max-w-6xl mx-auto"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start gap-6 mb-12"
+            >
+              <div class="max-w-2xl">
+                <p
+                  class="split-lines text-cafe-gold text-xs tracking-[0.15em] font-medium uppercase mb-4"
+                >
+                  Menú de temporada
+                </p>
+                <h2
+                  class="split-words font-title text-5xl md:text-6xl font-normal leading-tight text-cafe-title"
+                >
+                  Pocas piezas, mucha intención.
+                </h2>
+              </div>
+              <p
+                class="split-lines text-cafe-muted text-base font-light max-w-xs md:text-right md:mt-14 leading-relaxed"
+              >
+                Carta pensada para acompañar cafés limpios, dulces y con origen
+                visible.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <article
+                style="
+                  transition:
+                    scale 0.1s,
+                    box-shadow 0.1s;
+                "
+                class="card-animate bg-[#211914] border border-[#ebd9c5]/5 rounded-[24px] p-8 flex flex-col justify-between min-h-[180px] hover:shadow-[inset_0px_0px_5px_#b58d6350] hover:scale-[1.03]"
+              >
+                <div class="flex justify-between items-baseline mb-4">
+                  <h3 class="font-semibold text-lg text-cafe-title">
+                    Espresso Prisma
+                  </h3>
+                  <span class="font-medium text-base text-[#f7f4ee]"
+                    >3,20€</span
+                  >
+                </div>
+                <p class="text-cafe-muted text-sm font-light leading-relaxed">
+                  Doble, dulce y brillante. Cambia según el lote de la semana.
+                </p>
+              </article>
+
+              <article
+                style="
+                  transition:
+                    scale 0.1s,
+                    box-shadow 0.1s;
+                "
+                class="card-animate bg-[#211914] border border-[#ebd9c5]/5 rounded-[24px] p-8 flex flex-col justify-between min-h-[180px] hover:shadow-[inset_0px_0px_5px_#b58d6350] hover:scale-[1.03]"
+              >
+                <div class="flex justify-between items-baseline mb-4">
+                  <h3 class="font-semibold text-lg text-cafe-title">
+                    Filtro del día
+                  </h3>
+                  <span class="font-medium text-base text-[#f7f4ee]"
+                    >4,80€</span
+                  >
+                </div>
+                <p class="text-cafe-muted text-sm font-light leading-relaxed">
+                  Preparado en V60 o Kalita, con molienda ajustada al momento.
+                </p>
+              </article>
+
+              <article
+                style="
+                  transition:
+                    scale 0.1s,
+                    box-shadow 0.1s;
+                "
+                class="card-animate bg-[#211914] border border-[#ebd9c5]/5 rounded-[24px] p-8 flex flex-col justify-between min-h-[180px] hover:shadow-[inset_0px_0px_5px_#b58d6350] hover:scale-[1.03]"
+              >
+                <div class="flex justify-between items-baseline mb-4">
+                  <h3 class="font-semibold text-lg text-cafe-title">
+                    Latte madera
+                  </h3>
+                  <span class="font-medium text-base text-[#f7f4ee]"
+                    >4,50€</span
+                  >
+                </div>
+                <p class="text-cafe-muted text-sm font-light leading-relaxed">
+                  Leche fresca o avena, espresso de perfil cacao y final
+                  tostado.
+                </p>
+              </article>
+
+              <article
+                style="
+                  transition:
+                    scale 0.1s,
+                    box-shadow 0.1s;
+                "
+                class="card-animate bg-[#211914] border border-[#ebd9c5]/5 rounded-[24px] p-8 flex flex-col justify-between min-h-[180px] hover:shadow-[inset_0px_0px_5px_#b58d6350] hover:scale-[1.03]"
+              >
+                <div class="flex justify-between items-baseline mb-4">
+                  <h3 class="font-semibold text-lg text-cafe-title">
+                    Masa madre
+                  </h3>
+                  <span class="font-medium text-base text-[#f7f4ee]"
+                    >6,20€</span
+                  >
+                </div>
+                <p class="text-cafe-muted text-sm font-light leading-relaxed">
+                  Con mantequilla avellana, sal marina y mermelada de temporada.
+                </p>
+              </article>
+
+              <article
+                style="
+                  transition:
+                    scale 0.1s,
+                    box-shadow 0.1s;
+                "
+                class="card-animate bg-[#211914] border border-[#ebd9c5]/5 rounded-[24px] p-8 flex flex-col justify-between min-h-[180px] hover:shadow-[inset_0px_0px_5px_#b58d6350] hover:scale-[1.03]"
+              >
+                <div class="flex justify-between items-baseline mb-4">
+                  <h3 class="font-semibold text-lg text-cafe-title">
+                    Bizcocho espresso
+                  </h3>
+                  <span class="font-medium text-base text-[#f7f4ee]"
+                    >5,40€</span
+                  >
+                </div>
+                <p class="text-cafe-muted text-sm font-light leading-relaxed">
+                  Cacao, aceite de oliva y crema ligera de mascarpone.
+                </p>
+              </article>
+
+              <article
+                style="
+                  transition:
+                    scale 0.1s,
+                    box-shadow 0.1s;
+                "
+                class="card-animate bg-[#211914] border border-[#ebd9c5]/5 rounded-[24px] p-8 flex flex-col justify-between min-h-[180px] hover:shadow-[inset_0px_0px_5px_#b58d6350] hover:scale-[1.03]"
+              >
+                <div class="flex justify-between items-baseline mb-4">
+                  <h3 class="font-semibold text-lg text-cafe-title">
+                    Cold brew ámbar
+                  </h3>
+                  <span class="font-medium text-base text-[#f7f4ee]"
+                    >4,90€</span
+                  >
+                </div>
+                <p class="text-cafe-muted text-sm font-light leading-relaxed">
+                  Extracción lenta, hielo claro y piel de naranja al servir.
+                </p>
+              </article>
+            </div>
+          </section>
+          <section
+            class="font-sans px-6 md:px-16 py-16 w-full max-w-6xl mx-auto"
+            id="origen"
+          >
+            <div
+              class="border border-[#ebd9c5]/5 rounded-[32px] flex flex-col lg:flex-row overflow-hidden shadow-2xl"
+            >
+              <div
+                style="
+                  background: linear-gradient(
+                    160deg,
+                    #563721,
+                    #231b14,
+                    #120e0b
+                  );
+                "
+                class="flex-1 p-8 md:p-12 lg:p-14 flex flex-col justify-between gap-10"
+              >
+                <div>
+                  <p
+                    class="split-lines text-cafe-gold text-xs tracking-[0.15em] font-medium uppercase mb-4"
+                  >
+                    Origen y tueste
+                  </p>
+                  <h2
+                    class="split-words font-title text-4xl md:text-5xl font-normal leading-tight text-cafe-title mb-6 max-w-lg"
+                  >
+                    Cada taza conserva una coordenada.
+                  </h2>
+                  <p
+                    class="split-lines text-cafe-muted text-sm md:text-base font-light leading-relaxed max-w-2xl"
+                  >
+                    Trabajamos con cafés de pequeños productores, incluyendo
+                    lotes de Canarias y selecciones europeas tostadas en España.
+                    Tostamos claro para preservar dulzor, textura y claridad; y
+                    por último llega a tus manos servida con agua filtrada.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div
+                    class="card-animate bg-[#1c1410] border border-[#ebd9c5]/5 rounded-[16px] p-5"
+                  >
+                    <span
+                      class="block text-xl font-semibold text-cafe-title mb-1"
+                      >1.850 m</span
+                    >
+                    <span class="block text-cafe-muted text-xs font-light"
+                      >altitud media</span
+                    >
+                  </div>
+                  <div
+                    class="card-animate bg-[#1c1410] border border-[#ebd9c5]/5 rounded-[16px] p-5"
+                  >
+                    <span
+                      class="block text-xl font-semibold text-cafe-title mb-1"
+                      >72 h</span
+                    >
+                    <span class="block text-cafe-muted text-xs font-light"
+                      >reposo mínimo</span
+                    >
+                  </div>
+                  <div
+                    class="card-animate bg-[#1c1410] border border-[#ebd9c5]/5 rounded-[16px] p-5"
+                  >
+                    <span
+                      class="block text-xl font-semibold text-cafe-title mb-1"
+                      >6</span
+                    >
+                    <span class="block text-cafe-muted text-xs font-light"
+                      >lotes al mes</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                style="background: radial-gradient(#201610d9 20%, #15110d 50%)"
+                class="w-full lg:w-[380px] bg-[#211914] border-t lg:border-t-0 lg:border-l border-[#ebd9c5]/5 p-8 md:p-12 lg:p-14 flex flex-col items-center justify-center gap-8"
+              >
+                <div
+                  class="card-animate w-56 h-56 rounded-full border border-[#ebd9c5]/10 flex flex-col items-center justify-center gap-4 bg-[radial-gradient(circle_at_center,rgba(38,29,23,1)_0%,rgba(33,25,20,0)_70%)]"
+                >
+                  <svg
+                    class="w-8 h-8 text-[#b58d63]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M18 8h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1"></path>
+                    <path d="M2 8h16v7a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <path d="M6 2v2"></path>
+                    <path d="M10 2v2"></path>
+                    <path d="M14 2v2"></path>
+                  </svg>
+                  <span
+                    class="text-xs font-medium tracking-wider text-cafe-title uppercase"
+                  >
+                    Cacao · Panela · Flor
+                  </span>
+                </div>
+
+                <p
+                  class="split-lines text-cafe-muted text-center text-sm font-light leading-relaxed max-w-[240px]"
+                >
+                  Recetas calibradas por el lote de temporada, no por rutina.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            class="font-sans px-6 md:px-16 pt-16 pb-8 w-full max-w-6xl mx-auto flex flex-col gap-16"
+          >
+            <!-- BANNER DE RESERVAS -->
+            <div
+              class="bg-[#211914] border border-[#ebd9c5]/5 rounded-[32px] p-8 md:p-12 lg:p-14 flex flex-col lg:flex-row lg:items-center justify-between gap-8 shadow-2xl"
+            >
+              <!-- Bloque de Texto -->
+              <div class="max-w-2xl">
+                <p
+                  class="split-lines text-cafe-gold text-xs tracking-[0.15em] font-medium uppercase mb-4"
+                >
+                  Reservas
+                </p>
+                <h2
+                  class="split-words font-title text-4xl md:text-5xl font-normal leading-tight text-cafe-title mb-4"
+                >
+                  Tu mesa, tu método y un rato sin prisa.
+                </h2>
+                <p
+                  class="split-lines text-cafe-muted text-sm md:text-base font-light leading-relaxed"
+                >
+                  Reserva para desayunos largos, catas de filtro o tardes de
+                  trabajo tranquilo.<br class="hidden sm:inline" />
+                  Guardamos algunas mesas para visitas sin reserva.
+                </p>
+              </div>
+
+              <!-- Botón de Acción -->
+              <div class="shrink-0">
+                <a
+                  href="mailto:correodeejemplo@cafeprisma"
+                  class="inline-flex items-center gap-2 bg-cafe-accent text-cafe-bg px-6 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity"
+                >
+                  <span>Reservar por email</span>
+                  <!-- Icono de flecha curvada / compartir en SVG -->
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                    <polyline points="16 6 20 10 16 14"></polyline>
+                    <line x1="20" y1="10" x2="9" y2="10"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- FOOTER FINAL -->
+            <footer
+              class="border-t mb-8 border-[#ebd9c5]/10 pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs tracking-wide text-cafe-muted font-light"
+            >
+              <!-- Dirección -->
+              <div>Café Prisma · C. Garrido y Bermejo, 10, 37004 Salamanca</div>
+              <!-- Email de contacto -->
+              <a
+                href="mailto:correodeejemplo@cafeprisma"
+                class="hover:text-[#e6dfd5] transition-colors"
+              >
+                correodeejemplo@cafeprisma
+              </a>
+            </footer>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
