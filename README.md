@@ -22,5 +22,23 @@ Si quieres clonar este repositorio y ejecutarlo en tu máquina local, sigue esto
 1. Clona el repositorio:
 
 ```bash
-   git clone https://github.com/angelandrescode/CoffeWeb.git
+    git clone https://github.com/angelandrescode/CoffeWeb.git
+```
+
+2. Entra en el directorio del proyecto:
+
+```bash
+    cd cafe-web
+```
+
+3. Instalas dependencias
+
+```bash
+    npm i
+```
+
+4. Iniciar el servidor de desarrollo local
+
+```bash
+    npm run dev
 ```
