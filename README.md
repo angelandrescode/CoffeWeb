@@ -22,5 +22,5 @@ Si quieres clonar este repositorio y ejecutarlo en tu máquina local, sigue esto
 1. Clona el repositorio:
 
 ```bash
-   git clone [https://github.com/angelandrescode/CoffeWeb.git](https://github.com/angelandrescode/CoffeWeb.git)
+   git clone https://github.com/angelandrescode/CoffeWeb.git
 ```
